@@ -1,13 +1,13 @@
 # A2A-SIN-Email
 
-> A2A agent for Email integration within the OpenSIN ecosystem.
+> A2A agent integration for Email messaging platform.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/OpenSIN-AI/A2A-SIN-Email)](https://github.com/OpenSIN-AI/A2A-SIN-Email)
 
 ## Overview
 
-This repository provides an Agent-to-Agent (A2A) integration for Email, enabling seamless communication and automation within the OpenSIN-AI ecosystem.
+A2A (Agent-to-Agent) integration for Email. Part of the OpenSIN-AI ecosystem.
 
 ## Quick Start
 
@@ -20,14 +20,14 @@ npm start
 
 ## Features
 
-- A2A protocol support for Email
-- Automated message routing
-- Integration with OpenSIN MCP servers
-- Full observability via OpenSIN-Ledger
+- A2A protocol support
+- Email messaging integration
+- Automated agent communication
+- OpenSIN MCP server compatibility
 
 ## Architecture
 
-This agent connects to the OpenSIN orchestrator and handles Email-specific messaging through the A2A protocol.
+This agent connects to the OpenSIN orchestrator via A2A protocol and handles Email messaging operations.
 
 ## Contributing
 
