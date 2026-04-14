@@ -1,35 +1,27 @@
-# Agent: A2A-SIN-Email
+# A2A-SIN-Email — AGENTS.md
 
-**Team:** OpenSIN-AI
-**Protocol:** A2A (Agent-to-Agent)
-**Status:** Active
-**Repository:** https://github.com/OpenSIN-AI/A2A-SIN-Email
+## Purpose
 
-## Capabilities
+Email integration agent — full email agent with IMAP/SMTP for the OpenSIN fleet.
 
-A2A agent for Email integration within the OpenSIN ecosystem.
+## Rules
 
-## Communication
+- ALWAYS use opencode CLI for LLM calls
+- NEVER store emails locally — process and forward
+- ALWAYS log errors to GitLab LogCenter
+- ALWAYS follow Google account matrix for Gmail
 
-- **Input:** A2A messages from orchestrator
-- **Output:** A2A messages to other agents
-- **MCP:** Standard OpenSIN MCP servers
+## PARALLEL-EXPLORATION MANDATE (PRIORITY -4.5)
 
-## Security
+Bei grossen Codebases MUESSEN Agenten **5-10 parallele explore + 5-10 librarian-Agenten** starten.
 
-- All operations logged to OpenSIN-Ledger
-- Requires authorization token
-- Guardrails enforced on all inputs/outputs
+## Subagenten-Modelle
 
-## Setup
+| Subagent | Modell |
+|:---|:---|
+| **explore** | `nvidia-nim/stepfun-ai/step-3.5-flash` |
+| **librarian** | `nvidia-nim/stepfun-ai/step-3.5-flash` |
 
-```bash
-git clone https://github.com/OpenSIN-AI/A2A-SIN-Email.git
-cd A2A-SIN-Email
-npm install
-npm start
-```
+## Agent Config System v5
 
-## License
-
-MIT
+→ [Full Documentation](https://github.com/OpenSIN-AI/OpenSIN-documentation/blob/main/docs/guide/agent-configuration.md)
