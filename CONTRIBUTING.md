@@ -1,22 +1,32 @@
-# Contributing
+# Contributing to A2A-SIN-Email
 
-Thank you for contributing to OpenSIN-AI!
+## Scope first
 
-## Getting Started
+Before changing code or docs, verify the change genuinely belongs to the **Email** surface.
 
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feat/my-feature`
-3. Make changes and test
-4. Commit with conventional commits
-5. Open a PR
+Put the change here when it affects:
+- email ingestion, routing, or delivery workflows
+- email evidence, recovery, mailbox handling, or forwarding
+- email contracts tied to inbox processing and delivery automation
 
-## Code Style
+Do **not** put the change here when it belongs to:
+- generic messaging ownership outside email
+- unrelated social, meeting, or chat platform behavior
+- organization SSOT docs or architecture ownership
 
-- Use TypeScript
-- Follow existing patterns
-- Write tests for new features
-- JSDoc on exported functions
+## Workflow
+
+1. Branch from the latest `main`.
+2. Make the smallest repo-scoped change possible.
+3. Run validation command(s) relevant to the touched surface.
+4. Include exact validation commands and evidence in the PR.
+
+## Boundary checklist
+
+- Does this change stay within Email ownership?
+- Does another repo already own the adjacent platform behavior?
+- Does this PR avoid redefining shared docs, runtime, or platform canon?
 
 ## License
 
-MIT — See [LICENSE](LICENSE).
+By contributing, you agree that your contributions will be licensed under the Apache License 2.0.
