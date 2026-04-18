@@ -25,3 +25,11 @@ Bei grossen Codebases MUESSEN Agenten **5-10 parallele explore + 5-10 librarian-
 ## Agent Config System v5
 
 → [Full Documentation](https://github.com/OpenSIN-AI/OpenSIN-documentation/blob/main/docs/guide/agent-configuration.md)
+
+## Boundary Guidance for Agents
+
+When modifying this repo:
+
+- Prefer email integration work.
+- Keep claims scoped to this integration surface.
+- Do not redefine broader messaging, product, ops, or docs canon from here.
